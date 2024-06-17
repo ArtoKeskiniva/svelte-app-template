@@ -17,11 +17,7 @@ if (fs.existsSync(destination)) {
 
 console.log("Creating app in %s", destination)
 
-fs.cpSync(import.meta.dirname, destination, { recursive: true})
-
-fs.rmSync(path.join(destination, "create-app.js"))
-fs.rmSync(path.join(destination, "README.md"))
-fs.renameSync(path.join(destination, "README-template.md"), path.join(destination, "README.md"))
+fs.cpSync(path.join(import.meta.dirname, "template"), destination, { recursive: true})
 
 for (const name of ["index.html", "package.json", "README.md", "src/App.svelte"]) {
     const filename = path.join(destination, name)
