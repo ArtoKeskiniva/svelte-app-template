@@ -1,6 +1,6 @@
 # svelte-app-template
 
-This is a bare bones Svelte app project with Vite included.
+This is a bare bones [Svelte](https://svelte.dev/) app with [Vite](https://vitejs.dev/) included.
 
 The run it:
 
